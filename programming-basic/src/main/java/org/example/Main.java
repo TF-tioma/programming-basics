@@ -15,8 +15,8 @@ public class Main {
 //        task2();
 //        task3();
 //        task4();
-        task5();
-//        task6();
+//        task5();
+        task6();
 //        task7();
     }
 
@@ -73,35 +73,41 @@ public class Main {
     }
 
     /**
-     *     4. Дано действительное число R вида nnn.ddd ( три цифровых разряда в дробной и целой частях ) .
-     *     Поменять местами дробную и целую части числа и вывести полученное значение числа .
+     * 4. Дано действительное число R вида nnn.ddd ( три цифровых разряда в дробной и целой частях ) .
+     * Поменять местами дробную и целую части числа и вывести полученное значение числа .
      */
-    public static void task4(){
+    public static void task4() {
         double a = scannerDouble();
         String s = String.valueOf(a);
-        System.out.println(s.substring(4) + s.charAt(3) + s.substring(0,3) );
+        System.out.println(s.substring(4) + s.charAt(3) + s.substring(0, 3));
     }
 
     /**
      * 5. Дано натуральное число Т , которое представляет длительность прошедшего времени в секундах .
      * Вывести Данное значение длительности в часах , минутах и секундах в следующей форме : Hнч Мммин SSC
      */
-    public static void task5(){
-
+    public static void task5() {
+        int T = scannerInt();
+        System.out.println(
+                "Hour: " + T / 3600
+                        + " Minutes: " + T / 60 / 60
+                        + " seconds: : " + T / 60
+        );
     }
 
     /**
-     *6. Для данной области составить линейную программу , которая печатает true ,
+     * 6. Для данной области составить линейную программу , которая печатает true ,
      * если точка с координатами ( x , y ) принадлежит закрашенной области , и false - в противном случае :
      */
-    public static void task6(){
-
+    public static void task6() {
+        String repeated = "Java".repeat(5);
+        System.out.println(repeated);
     }
 
     /**
      *
      */
-    public static void task7(){
+    public static void task7() {
 
     }
 }
